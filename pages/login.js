@@ -60,17 +60,20 @@ const LoginForm = () => {
           <h1 className="text-6xl font-semibold">Login</h1>
           <p className="mt-6 ml-1">
             Don't have an account ?{" "}
-            <Link href="/register" className="underline hover:text-blue-400 cursor-pointer">
+            <Link
+              href="/register"
+              className="underline hover:text-blue-400 cursor-pointer"
+            >
               Sign Up
             </Link>
           </p>
 
-          <div className="bg-black/[0.05] text-white w-full py-4 mt-10 rounded-full transition-transform hover:bg-black/[0.8] active:scale-90 flex justify-center items-center gap-4 cursor-pointer group">
+          <div
+            className="bg-black/[0.05] text-white w-full py-4 mt-10 rounded-full transition-transform hover:bg-black/[0.8] active:scale-90 flex justify-center items-center gap-4 cursor-pointer group"
+            onClick={signInWithGoogle}
+          >
             <FcGoogle size={22} />
-            <span
-              className="font-medium text-black group-hover:text-white"
-              onClick={signInWithGoogle}
-            >
+            <span className="font-medium text-black group-hover:text-white">
               Login with Google
             </span>
           </div>
